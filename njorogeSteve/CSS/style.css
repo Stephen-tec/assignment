@@ -26,3 +26,31 @@ h2 {
     background-color: rgb(255, 0, 0);
     color: white;
 }
+.banner {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.row ::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.left_side_bar {
+    float: left;
+    width: 20%;
+    background-color: rgb(233, 140, 130);
+    padding: 20px;
+}
+.content {
+    float: left;
+    width: 60%;
+    padding: 20px;
+}
+.right_side_bar {
+    float: left;
+    width: 20%;
+    background-color: rgb(233, 140, 130);
+    padding: 20px;
+}

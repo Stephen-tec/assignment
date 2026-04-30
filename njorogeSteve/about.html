@@ -35,9 +35,40 @@
         color: white;
 
     }   
+    .row ::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.left_side_bar {
+    float: left;
+    width: 20%;
+    background-color: rgb(233, 140, 130);
+    padding: 20px;
+}
+.content {
+    float: left;
+    width: 60%;
+    padding: 20px;
+}
+.right_side_bar {
+    float: left;
+    width: 20%;
+    background-color: rgb(233, 140, 130);
+    padding: 20px;
+}
 
 </style>
-
+<div class="banner">
+    <h1 style="text-align: center; color: rgb(0, 123, 255);">Welcome to My Personal Website</h1>    
+    <div class ="right side">
+        <img src="images/steve.jpg.jpg" alt="Steve Njoroge" style="width: 200px; height: auto; border-radius: 50%;">    
+    </div>
+</div>
+<div class = "right side bar ">
+    <h2 style="text-align: center; color: rgb(0, 123, 255);">About Me</h2>
+    <p style="text-align: right;">Hi! I'm Steve Njoroge,</p>
+</div>"
 <div class="toplink">
     <a href="about.html">Go to About</a> &#65372;
     <a href="contacts.html">Go to Contacts</a> &#65372;
