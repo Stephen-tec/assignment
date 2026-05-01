@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Name System (DNS)</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --text: #333;
+        }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--text); padding: 20px; max-width: 900px; margin: auto; background-color: #f9f9f9; }
+        
+        /* Consistent Navigation */
+        nav { background: var(--primary); padding: 15px; border-radius: 8px; margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; }
+        nav a { color: white; text-decoration: none; font-size: 14px; padding: 5px 10px; border-radius: 4px; transition: background 0.3s; }
+        nav a:hover { background: var(--accent); }
+        nav a.home { background: #e74c3c; font-weight: bold; }
+
+        h1 { color: var(--primary); border-bottom: 3px solid var(--accent); padding-bottom: 10px; }
+        h2 { color: var(--accent); margin-top: 30px; }
+        
+        .content-img { width: 100%; max-height: 400px; object-fit: contain; background: white; border: 1px solid #ddd; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        .tier-box { background: white; padding: 20px; margin-bottom: 20px; border-left: 5px solid var(--accent); border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .tier-title { font-weight: bold; font-size: 1.2rem; color: var(--primary); display: block; margin-bottom: 10px; }
+        
+        footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #ccc; color: #7f8c8d; font-size: 0.9rem; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="home">🏠 Home</a>
+        
+    </nav>
+
+    <h1>Domain Name System (DNS)</h1>
+
+    <p>
+        The <strong>Domain Name System (DNS)</strong> is the phonebook of the Internet. Humans access information online through domain names, like <code>google.com</code>. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources.
+    </p>
+
+    <!-- Visual Aid for your assignment -->
+    <img src="images/dns.jpg" alt="DNS Lookup Process" class="content-img">
+
+    <div class="tier-box">
+        <span class="tier-title">How DNS Works</span>
+        <ul>
+            <li><strong>Request:</strong> You type a domain name into your browser.</li>
+            <li><strong>Translation:</strong> The DNS resolver finds the specific IP address associated with that name.</li>
+            <li><strong>Connection:</strong> Your computer connects to the web server at that IP address to load the site.</li>
+        </ul>
+    </div>
+
+    <div class="tier-box">
+        <span class="tier-title">Key Components</span>
+        <ul>
+            <li><strong>DNS Resolver:</strong> The server that receives the initial query from your computer.</li>
+            <li><strong>IP Address:</strong> A unique string of numbers that identifies each computer using the Internet Protocol to communicate over a network.</li>
+        </ul>
+    </div>
+    <footer>
+        <p>2026</p>
+    </footer>
+
+</body>
+</html> 
