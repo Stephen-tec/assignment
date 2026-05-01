@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet </title>
+    <style>
+        :root {
+            --bg: #f0f2f5;
+            --glass: rgba(255, 255, 255, 0.9);
+            --primary: #2563eb;
+            --text: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
+            color: var(--text);
+            margin: 0;
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav nav nav"
+                "left main right"
+                "footer footer footer";
+            grid-template-columns: 250px 1fr 250px;
+            grid-template-rows: auto auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        header { grid-area: header; padding: 40px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; color: #1e3a8a; letter-spacing: -1px; }
+
+        /* Top Nav */
+        nav { grid-area: nav; display: flex; justify-content: center; gap: 15px; padding: 10px; }
+
+        /* Sidebars */
+        aside { padding: 20px; }
+        .left { grid-area: left; }
+        .right { grid-area: right; }
+
+        /* Main Content Glass Effect */
+        main { 
+            grid-area: main; 
+            background: var(--glass); 
+            margin: 20px; 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        /* Buttons Styling */
+        .nav-link {
+            display: block;
+            text-decoration: none;
+            background: white;
+            color: var(--text);
+            padding: 12px 18px;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid transparent;
+        }
+
+        .nav-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 10px 15px rgba(37, 99, 235, 0.2);
+        }
+
+        .top-link {
+            text-decoration: none;
+            background: #1e3a8a;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            transition: transform 0.2s;
+        }
+
+        .top-link:hover { transform: scale(1.05); background: #2563eb; }
+
+        h2 { color: var(--primary); font-size: 1.8rem; }
+        p { line-height: 1.7; font-size: 1.1rem; color: #475569; }
+
+        footer { grid-area: footer; text-align: center; padding: 20px; font-size: 0.8rem; opacity: 0.7; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            body { grid-template-columns: 1fr; grid-template-areas: "header" "nav" "main" "left" "right" "footer"; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Internet </h1>
+        <p>A BBIT Student's Guide to the Connected World</p>
+    </header>
+
+    <nav>
+        <a href="www.html" class="top-link">World Wide Web</a>
+        <a href="tcpip.html" class="top-link">TCP/IP</a>
+        <a href="http.html" class="top-link">HTTP</a>
+        <a href="html.html" class="top-link">HTML</a>
+    </nav>
+
+    <aside class="left">
+        <h4 style="margin-left: 10px; color: #64748b;">INFRASTRUCTURE</h4>
+        <a href="browsers.html" class="nav-link">Web Browsers</a>
+        <a href="servers.html" class="nav-link">Web Servers</a>
+        <a href="url.html" class="nav-link">URLs</a>
+        <a href="dns.html" class="nav-link">DNS</a>
+        <a href="ftp.html" class="nav-link">FTP</a>
+    </aside>
+
+    <main>
+        <h2>The Digital Landscape</h2>
+        <p>Welcome to your central repository for Internet Terminology. This site is designed to break down the complex layers of how the modern web functions.</p>
+        <p>From the physical hardware of <strong>Web Servers</strong> to the conceptual evolution of <strong>Web 4.0</strong>, select a topic from the navigation bars to begin your deep dive.</p>
+    </main>
+
+    <aside class="right">
+        <h4 style="margin-left: 10px; color: #64748b;">EVOLUTION</h4>
+        <a href="intranet.html" class="nav-link">Intranet</a>
+        <a href="multitier.html" class="nav-link">Multitier</a>
+        <a href="web1.html" class="nav-link">Web 1.0</a>
+        <a href="web2.html" class="nav-link">Web 2.0</a>
+        <a href="web3.html" class="nav-link">Web 3.0</a>
+        <a href="web4.html" class="nav-link">Web 4.0</a>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 </p>
+    </footer>
+
+</body>
+</html>

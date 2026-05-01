@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multitier Architecture - Internet Lexicon</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --text: #333;
+        }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--text); padding: 20px; max-width: 900px; margin: auto; background-color: #f9f9f9; }
+        
+        /* Consistent Navigation */
+        nav { background: var(--primary); padding: 15px; border-radius: 8px; margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; }
+        nav a { color: white; text-decoration: none; font-size: 14px; padding: 5px 10px; border-radius: 4px; transition: background 0.3s; }
+        nav a:hover { background: var(--accent); }
+        nav a.home { background: #e74c3c; font-weight: bold; }
+
+        h1 { color: var(--primary); border-bottom: 3px solid var(--accent); padding-bottom: 10px; }
+        h2 { color: var(--accent); margin-top: 30px; }
+        
+        .content-img { width: 100%; max-height: 400px; object-fit: contain; background: white; border: 1px solid #ddd; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        .tier-box { background: white; padding: 20px; margin-bottom: 20px; border-left: 5px solid var(--accent); border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .tier-title { font-weight: bold; font-size: 1.2rem; color: var(--primary); display: block; margin-bottom: 10px; }
+        
+        footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #ccc; color: #7f8c8d; font-size: 0.9rem; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html" class="home">🏠 Home</a>
+        <!-- Strategic Interlinking -->
+        <a href="browsers.html">Web Browsers</a>
+        <a href="servers.html">Web Servers</a>
+        <a href="http.html">HTTP</a>
+        <a href="web3.html">Web 3.0</a>
+    </nav>
+
+    <h1>Multitier Architecture</h1>
+
+    <p>
+        <strong>Multitier Architecture</strong> (often referred to as N-tier architecture) is a client-server architecture in which functional process logic, data access, computer data storage, and user interface are developed and maintained as independent modules on separate platforms.
+    </p>
+
+    <!-- Visual Aid -->
+    
+    <img src="../images/multitier.jpg" alt="3-Tier Architecture Diagram" class="content-img">
+
+    <h2>The Three-Tier Breakdown</h2>
+
+    <div class="tier-box">
+        <span class="tier-title">1. Presentation Tier (Front-end)</span>
+        <p>This is the user interface and communication layer where the end-user interacts with the application. Its main purpose is to display information to and collect information from the user.</p>
+        <ul>
+            <li><strong>Technology:</strong> HTML5, CSS3, JavaScript.</li>
+            <li><strong>Function:</strong> Handles user input and sends requests to the Application Tier.</li>
+        </ul>
+    </div>
+
+    <div class="tier-box">
+        <span class="tier-title">2. Application Tier (Logic/Middle Tier)</span>
+        <p>The "heart" of the application. This layer coordinates the application, processes commands, makes logical decisions, and performs calculations.</p>
+        <ul>
+            <li><strong>Technology:</strong> Java, Python, PHP, .NET.</li>
+            <li><strong>Function:</strong> Moves and processes data between the two surrounding layers.</li>
+        </ul>
+    </div>
+
+    <div class="tier-box">
+        <span class="tier-title">3. Data Tier (Back-end)</span>
+        <p>This tier includes the data persistence mechanisms (database servers, file shares, etc.) and the data access layer that encapsulates the persistence logic.</p>
+        <ul>
+            <li><strong>Technology:</strong> MySQL, PostgreSQL, Oracle, MongoDB.</li>
+            <li><strong>Function:</strong> Information is stored and retrieved from a database or file system.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>BBIT Topic 1: Internet Technology Assignment | Student ID: [Your ID]</p>
+    </footer>
+
+</body>
+</html>
