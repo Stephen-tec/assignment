@@ -3,105 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internet Technology Lexicon</title>
+    <title>Intranet</title>
     <style>
         :root {
             --primary: #2c3e50;
             --accent: #3498db;
-            --light: #ecf0f1;
+            --text: #333;
         }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--text); padding: 20px; max-width: 900px; margin: auto; background-color: #f9f9f9; }
+        
+        /* Consistent Navigation */
+        nav { background: var(--primary); padding: 15px; border-radius: 8px; margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; }
+        nav a { color: white; text-decoration: none; font-size: 14px; padding: 5px 10px; border-radius: 4px; transition: background 0.3s; }
+        nav a:hover { background: var(--accent); }
+        nav a.home { background: #e74c3c; font-weight: bold; }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--light);
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            background-color: var(--primary);
-            color: white;
-            width: 100%;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        /* The Grid Layout */
-        .term-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .term-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-            text-decoration: none;
-            color: var(--primary);
-            font-weight: bold;
-            transition: transform 0.2s, box-shadow 0.2s;
-            border-bottom: 4px solid var(--accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .term-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-            background-color: var(--accent);
-            color: white;
-        }
-
-        footer {
-            margin-top: auto;
-            padding: 2rem;
-            color: #7f8c8d;
-        }
+        h1 { color: var(--primary); border-bottom: 3px solid var(--accent); padding-bottom: 10px; }
+        h2 { color: var(--accent); margin-top: 30px; }
+        
+        .content-img { width: 100%; max-height: 400px; object-fit: contain; background: white; border: 1px solid #ddd; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        .tier-box { background: white; padding: 20px; margin-bottom: 20px; border-left: 5px solid var(--accent); border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .tier-title { font-weight: bold; font-size: 1.2rem; color: var(--primary); display: block; margin-bottom: 10px; }
+        
+        footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #ccc; color: #7f8c8d; font-size: 0.9rem; text-align: center; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Internet Terminology Explorer</h1>
-        <p>BBIT Assignment 1: Topic 1 Knowledge Base</p>
-    </header>
+    <nav>
+        <a href="../index.html" class="home">🏠 Home</a>
+        
+    </nav>
 
-    <div class="container">
-        <div class="term-grid">
-            <!-- Every term becomes a Card -->
-            <a href="pages/www.html" class="term-card">World Wide Web</a>
-            <a href="pages/tcp-ip.html" class="term-card">TCP/IP</a>
-            <a href="pages/browsers.html" class="term-card">Web Browsers</a>
-            <a href="pages/servers.html" class="term-card">Web Servers</a>
-            <a href="pages/url.html" class="term-card">URLs</a>
-            <a href="pages/dns.html" class="term-card">DNS</a>
-            <a href="pages/http.html" class="term-card">HTTP</a>
-            <a href="pages/intranet.html" class="term-card">Intranet</a>
-            <a href="pages/extranet.html" class="term-card">Extranet</a>
-            <a href="pages/multitier.html" class="term-card">Multitier Architecture</a>
-            <a href="pages/ftp.html" class="term-card">FTP</a>
-            <a href="pages/html.html" class="term-card">HTML</a>
-            <a href="pages/web1.html" class="term-card">Web 1.0</a>
-            <a href="pages/web2.html" class="term-card">Web 2.0</a>
-            <a href="pages/web3.html" class="term-card">Web 3.0</a>
-            <a href="pages/web4.html" class="term-card">Web 4.0</a>
-        </div>
+    <h1>Intranet</h1>
+
+    <p>
+        An <strong>Intranet</strong> is a private network used by an organization to securely share its information and computing resources among its employees. It uses the same TCP/IP protocols as the public Internet but is restricted to internal users.
+    </p>
+    <img src="images/intranet.jpg" alt="Intranet Diagram" class="content-img" >
+
+    <div class="tier-box">
+        <span class="tier-title">Main Purposes</span>
+        <ul>
+            <li><strong>Collaboration:</strong> Facilitates internal communication and project management.</li>
+            <li><strong>Resource Sharing:</strong> Centralized access to company documents and software.</li>
+            <li><strong>Security:</strong> Protected by firewalls to prevent unauthorized external access.</li>
+        </ul>
     </div>
 
+    <div class="tier-box">
+        <span class="tier-title"> Example</span>
+        <p>A University Student Portal that only students and staff can log into is a classic example of an intranet environment.</p>
+    </div>
     <footer>
-        <p>&copy; 2026 BBIT Student - Git Project</p>
+        <p>2026</p>
     </footer>
 
 </body>
