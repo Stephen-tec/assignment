@@ -5,18 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
 </head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 50%;
+  color: black ;
+    font-family: comic sans-serif;
+    border-spacing: 0;
+    border: 1px solid #373737;
+}
+th, td {
+  border: 1px solid #373737;
+  padding: 8px;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tr:hover {
+  background-color: teal;
+}
+#container {
+  display: flex;
+}
+#left-sidebar, #right-sidebar {
+  width: 20%;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+#main {
+  width: 60%;
+  padding: 10px;
+}
+</style>
 <body>
+<div id="container">
+<div id="left-sidebar">
+<h2>Left Sidebar</h2>
+<p>Content here</p>
+</div>
+<div id="main">
     <a href="about.html"> Go to About</a>&#65372;
     <a href="contacts.html"> Go to Contacts</a> &#65372;
     <a href="indice.html"> Go to Home .</a>&#65372;
     <a href="faqs.html"> Go to FAQs .</a>&#65372;
     <h1>My Projects</h1>
-    <p>Here are some of the projects I've worked on:</p>
-    <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-    </ul>
-    
+   <table border="1" cellpadding="10" cellspacing="0">
+<tr>
+<th>Product Name</th>
+<th>Quantity</th>
+<th>Price</th>
+</tr>
+<tr>
+<td>Product 1</td>
+<td>10</td>
+<td>$100</td>
+</tr>
+<tr>
+<td>Product 2</td>
+<td>15</td>
+<td>$150</td>
+</tr>
+<tr>
+<td>Product 3</td>
+<td>20</td>
+<td>$200</td>
+</tr>
+<tr>
+<td>Product 4</td>
+<td>25</td>
+<td>$250</td>
+</tr>
+<tr>
+<td>Product 5</td>
+<td>30</td>
+<td>$300</td>
+</tr>
+</table>
+</div>
+<div id="right-sidebar">
+<h2>Right Sidebar</h2>
+<p>Content here</p>
+</div>
+</div>
 </body>
 </html>
