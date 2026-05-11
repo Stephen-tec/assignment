@@ -3,107 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome </title>
-    
-</head>
-<body> 
-    
- <style>
-    body {
-        font-family: Arial, sans-serif;
-        color: #333;
-        padding: 20px;
-    }
-    p {
-        text-align: left;
-        font-family: Arial, sans-serif;
-    }
-    h2 {
-        text-decoration: underline;
-        color: rgb(0, 123, 255);
-    }   
-    .toplink {
-        padding: 10px;
-        top: 10px;
-        right: 10px;
-        background-color:rgb(157,55,89);
-        color: white;
-        padding: 10px 15px;
-        display: block;
-        overflow: hidden;
-        text-decoration: none;
-    }
-    .toplink:hover {
-        background-color: rgb(255, 0, 0);
-        color: white;
-
-    }   
-
-</style>
-
-<div class="toplink">
-    <a href="about.html"> Go to About</a>&#65372;
-    <a href="contacts.html"> Go to Contacts</a> &#65372;
-    <a href="projects.html"> Go to Projects .</a> &#65372;
-    <a href="indice.html"> Go to Home .</a>&#65372;
-    <a href="faqs.html"> Go to FAQs .</a>
-</div>    
-
-
-<div style= "width: 50%; border: 5px; border-color: #c9b231;
-border-style: solid; background-color :aqua; color:
-rgb(165, 50, 42);">
-Illustrating some <span style="text-decoration: underline;">content</span>
-</div>
-    <h1>heading 1</h1>
-    <h2>heading 2</h2>
-    <h3>heading 3</h3>      
-    <h4>heading 4</h4>  
-    <h5>heading 5</h5>
-    <h6>heading 6</h6>
-    <p>This is a paragraph of text. It provides information about the content of the document.I want to learn how to code in HTML.
-        <br>
-        <hr>
-
-        My name is John , I speak French and I am from the Senegal  . I like to code in HTML.</p>
-    <p><img src="images/subie.jpg.jpg" alt="Subaru"  width="300" height="200"></p>  
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-</ul>
-
-<ol type ="A" start ="16">
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
-</ol>
-<dl>
-    <dt>Apple </dt>
-    <dd>A fruit that is red, green, or yellow in color.</dd>
-    <dt>Banana</dt> 
-    <dd>A long, curved fruit that is yellow when ripe.</dd>
-    <dt>Orange  </dt>
-    <dd>A citrus fruit that is orange in color.</dd>
-</dl>
-<! -- HTML special characters -->
-<p> &#169; 2023 My Website. All rights reserved.</p>
-<p>&copy; 2023 My Website. All rights reserved.</p>
-<p>&lt;div&gt;This is a div element.&lt;/div&gt;</p>
-<p>&amp; is the symbol for an ampersand.</p>    
-<p>&quot;This is a quote.&quot;</p>
-<p>&#39;This is an apostrophe.&#39;</p> 
-<p>&#x1F600; This is a smiley face emoji.</p>   
-<p>&#174; This is a registered trademark symbol.</p>
-<p>&#8364; This is a Euro symbol.</p>
-<p>&#36; This is a dollar symbol.</p>
-<p>&#9733; This is a star symbol.</p>
-<div class="container">
-    <p>This is a div element with a class of "container".</p>
-</div>
-
+    <title>Welcome</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
+    <div class="toplink">
+        <a href="indice.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contacts.html">Contact</a>
+    </div>
+
+    <div class="banner">
+        <h1>Welcome to My Website</h1>
+    </div>
+
+    <div class="row">
+        <div class="left_side_bar">
+            <h3>Sidebar</h3>
+            <p>left side content</p>
+        </div>
+
+        <div class="content">
+            <div style="border: 2px solid #667eea; background-color: #f0f4ff; padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                Illustrating some <span class="underline">content</span>
+            </div>
+
+            <h1>Main Heading</h1>
+            <p>This is a paragraph of text. It provides information about the content of the document. I want to learn how to code in HTML.</p>
+            
+            <hr>
+
+            <p>My name is John, I speak French and I am from Senegal. I like to code in HTML.</p>
+            
+            <p><img src="images/subie.jpg.jpg" alt="Subaru" width="300" height="200" style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);"></p>
+
+            <h3>Languages</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Ordered Steps</h3>
+            <ol type="A" start="16">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+
+            <h3>Definition List</h3>
+            <dl>
+                <dt>Apple</dt>
+                <dd>A fruit that is red, green, or yellow in color.</dd>
+                <dt>Banana</dt>
+                <dd>A long, curved fruit that is yellow when ripe.</dd>
+                <dt>Orange</dt>
+                <dd>A citrus fruit that is orange in color.</dd>
+            </dl>
+
+            <div style="margin-top: 30px; padding: 20px; background: #f9f9f9; border-radius: 8px;">
+                <h4>Special Characters</h4>
+                <p>&lt;div&gt; This is a div element. &lt;/div&gt;</p>
+                <p>&amp; Ampersand | &quot; Quote | &#39; Apostrophe</p>
+                <p>&#x1F600; Emoji | &#174; Registered | &#8364; Euro | &#9733; Star</p>
+            </div>
+        </div>
+
+        <div class="right_side_bar">
+            <p>right side content</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &#169; BBIT 2026
+    </div>
+
 </body>
-</html> 
+</html>
