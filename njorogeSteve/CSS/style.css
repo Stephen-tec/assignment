@@ -161,3 +161,20 @@ button:hover {
     padding: 20px;
     clear: both;
 }
+.toplink-right {
+   float: right;
+}
+.signupForm input[type="text"], .signupForm input[type="email"], .signupForm input[type="tel"], .signupForm input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #edf2f7;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.signupForm input[type="text"]:focus, .signupForm input[type="email"]:focus, .signupForm input[type="tel"]:focus, .signupForm input[type="password"]:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
