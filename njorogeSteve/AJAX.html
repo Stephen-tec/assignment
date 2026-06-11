@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script
+></head>
+<body>
+    <script>
+        // create an XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+        //configure it GET request for the URL /ajax/test.json
+        xhr.open("GET",nav.html,true);
+        //set up a callback function to handle the response
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                //parse the JSON response
+                var response = JSON.parse(xhr.responseText);
+                document.write(response);
+            }else if (xhr.readyState === 4) {
+                document.write("Error: " + xhr.status);
+            }
+        };
+        //send the request
+        xhr.send();
+
+
+    </script>
+</html>

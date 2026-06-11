@@ -160,7 +160,61 @@ var kenyanCities = ["Nairobi", "Mombasa", "Kisumu", "Nakuru", "Eldoret", "Thika"
     for (var color of colors) {
         document.write(color + "<br>"); // Output: Red, Green, Blue, Yellow, Purple
     }
+    // for in loop ( for objects )
+    document.write("<h4>For In Loop</h4>");
+    var car = {
+        make: "Toyota",
+        model: "Corolla",
+        year: 2020
+    };
+    for (var Detail in car) {
+        document.write(Detail + ": " + car[Detail] + "<br>"); // Output: make: Toyota, model: Corolla, year: 2020
+    }
 </script>
+
+<h5> select date of birth </h5>
+<label for="dob-day">Day</label>
+<select id="dob-day" name="dob-day">
+    <option value="">Select day</option>
+    <script>
+        for (var day = 1; day <= 31; day++) {
+            document.write("<option value='" + day + "'>" + day + "</option>");
+        }
+    </script>
+    
+</select>
+<label for="dob-month">Month</label>
+<select id="dob-month" name="dob-month">
+    <option value="">Select month</option>
+    <script>
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        for (var m = 0; m < monthNames.length; m++) {
+            document.write("<option value='" + monthNames[m] + "'>" + monthNames[m] + "</option>");
+        }
+    </script>
+</select>
+<label for="dob-year">Year</label>
+<select id="dob-year" name="dob-year">
+    <option value="">Select year</option>
+    <script>
+        var currentYear = new Date().getFullYear();
+        for (var year = currentYear; year >= 1900; year--) {
+            document.write("<option value='" + year + "'>" + year + "</option>");
+        }
+    </script>
+</select>
+function navigationAJAX() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "nav.html", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            document.write(xhr.responseText);
+        } else if (xhr.readyState === 4) {
+            document.write("Error: " + xhr.status);
+        }
+    };
+    xhr.send();
+}
 <br>
 <br>
 <br>
